@@ -1,0 +1,88 @@
+Selenium Class 1
+What is software testing?
+
+-- identify the correctness and quality of the application
+
+How many ways can we actually test?
+--Manual
+--Automation
+
+When do we go for automation testing? When do we start automation testing?
+- first we need to do MANUAL TESTING FIRST ---> Then we go for automation testing
+- when the application or the environment is stable- testers work in test environment
+-- we need an automation tools -- automation suits == analyze our test suite and choose our automation tools
+
+What automation tools do we know about?
+--Selenium, TestNG, Cucumber, Katalon Studio, UFT/QTP
+
+Level of testing
+---Unit Testing -- done by DEV
+-- Integration testing -- QA can do it
+-- System Testing -- done by higher personal
+-- Acceptance Testing -- done by CLIENT
+
+Types of Testing ?
+Functional and NON-Functional testing
+
+Functional - -- we will be doing mostly functional testing
+Non-functional-
+            performance testing-->  how much stress it can handle, how system works under specific workloads,
+            how is the system performing having 100-600 requests at the same time, will it lag, stability of application
+            response time
+            security testing--> is it hackable, how is system behaving when someone is hacking, check firewall
+
+What is Selenium?
+-- set of tools that help us automate web applications
+-- mainly used to perform functional testing
+
+Selenium Components:
+Selenium IDE -> integrated development environment
+Selenium Grid --> Firefox plugin
+Selenium WebDriver --> will be using this in class
+Selenium RC --> Remote control
+
+What is Selenium WebDriver?
+-- open source automation tool which allows us to perform actions on a web applications
+WebDriver is an interface
+
+Advantages of Selenium WebDriver:
+1) open source - free
+2) works with different browsers, supports cross browsing testing
+3) works with different programming languages -- > Java, JavaScripts, Ruby, Python
+4) operating system (OS) independent - works on iOS, windows, Linux
+
+
+Disadvantages of Selenium:
+1) only works with WebBased applications- cant work on desktop applications
+2) free tool no technical support
+3) no builtin reports with selenium --> no separate file that has the report saying where we failed and why, no feedback
+4) no image testing with Selenium
+        - cannot test, captchas-only done with manual testing (i am not robot) , images, or videos --> because they are
+        not the functionalities of the website-- captchas- security, images & videos - design
+
+
+
+get ()  vs navigate ( )
+
+-- navigate we can go back and forward, and can refresh
+-- get ( )  - will wait for the page to fully load, and then go to the next line of code
+-- navigate ( ) -will not wait for the page to fully load , it will continue to the next line of code without waiting
+
+get ( ) -- will not keep the history of the browser
+navigate ( ) -- will keep the history of the browser
+
+close ( ) vs quit ( )
+-- close ( )  will close the current tab
+-- quit ( ) will quit the whole browser
+
+fullscreen ( ) vs maximize ( )
+-- maximize  ( ) will maximize the browser and you will still will be able to see control panel ( back, forward, bookmarks)
+-- fullscreen ( ) will maximize the whole application
+
+
+
+
+
+
+
+

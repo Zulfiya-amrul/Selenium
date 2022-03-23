@@ -1,0 +1,34 @@
+What is Selenium?
+- automation tool that is used to automate test cases for Web Based applications
+- Selenium WebDriver - is an interface, and a web automation framework that can
+can communicate directly with the browser
+- Selenium is open Source Automation Testing tool (free)
+
+-Selenium WebDriver supports various Browsers,
+ex: ChromeDriver, FirefoxDriver, InternetExplorerDriver, SafariDriver, AndroidDriver,
+AndroidWebDriver, HtmlUnitDriver, IPhoneDriver etc.
+
+-Selenium WebDriver supports various Operating Systems-
+MS Windows, Linux, Macintosh etc...
+
+-Selenium WebDriver supports various programming languages to create Test Scripts/Test Cases/Programs
+such as Java, Python, C#.Net, Perl, Ruby, PHP
+
+- Selenium WebDriver supports Data Driven Testing, Batch, Testing, Cross Browser and Database Testing.
+
+Selenium Architecture
+1- selenium client library (Selenium project on IDE - Batch12Selenium on IntelliJ using java- example)
+
+2- takes the code we have written and converts it into -- > Json format
+
+3- the code in Json format is send to Browser Drivers (example chrome.driver or gecko driver)
+                                            - selenium communicated with browsers using Browser Drivers tool
+
+4- the browser driver communicates directly with actual browser -
+
+5- the browser will now follow the set of instructions that were send by driver
+
+6- the actual browser gives a response to our driver, the driver converts that response back into Json format
+the Json format will go back into local machine and will give us a read out  ( report, print something so on )
+
+

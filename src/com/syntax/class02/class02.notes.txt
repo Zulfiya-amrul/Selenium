@@ -1,0 +1,77 @@
+
+What is Selenium?
+set of tools,
+has 4 components - IDE, Grid, RCE, webDriver
+webDriver- open source automation tool, - we can work/test with web applications,
+
+advantages - supports diferent programing languages, open source, works with different operating systems
+
+disadvantages- no builtin support, cant test images videos or capchas those are done manually
+
+1)set properties - need to mention our driver and the path,
+2) create object of the webdriver -- launches the browser
+
+
+Selenium Class 2
+
+What is a web element- anything we see on the webpage is considered a web element
+- example --> any text, checkboxes, links, textboxes.
+each web element is identified inside the HTML
+
+What is HTML - hyperText Markup Language - where we start to design our website-
+format what we will have on th web is made by html
+
+DOM - document object model- his section of the webpage opens up when we click on inspect
+-- DOM is browsers internal view of the webpage
+-- it is also called as developer tools or Dev tools
+
+            --DOM--
+Document --> Artifact, anything can be stored inside, for the DOM we are working on now HTML is stored
+Object -->  any line in html is considered an object
+Model -- > it is just the layout of the HTML
+
+- the actual design on the website is made by the language CSS, the functionalities are made on HTML
+
+
+Locator in Selenium
+-address that identifies Web Elements, or group of Web Elements uniquely, within the DOM
+-- its a position of the webElements
+-- we need to tell selenium which web element we want it to work with to perform any actions
+
+Locator
+- is an address or a position of a webelement o the web page
+- it is used to locate or identify webelements on the webpage
+
+we have 8 different locators - we have 8 ways to identify the element that we are looking for,
+we have 8 ways to tell our selenium on what to interact with
+
+
+1- ID- most unique locator
+2- Name
+3- TagName
+4- Xpath
+5- LinkTxt
+6- PartialLinktext
+7- CSS Selector
+8- ClassName
+
+
+when do we use linktxt or patrtiallink txt - whenever we have a link, a tag
+
+HTML Scripting Meaning
+first words in BLUE- tags  - button, div, form, input
+words in   WHITE - name, autocomplete, id, class  -- > considered to be attributes in HTML
+ORANGE - ATTRIBUTE VALUE, hidden, post, off,
+
+Why do we need many locators?
+-- developers may not provide all the locators for all the elements
+-- some locators might have duplicate values in different nodes
+-- some locators may not be applicable for the elements we are looking for
+ex. LinkText and partialLinktext are only used for links
+"a" tag is also called an anchor tag and is used to identifly a line that has a link
+
+
+if 2 or more elements have same attributes and attribute values,
+selenium will only interact with the first element if locates
+
+
