@@ -1,0 +1,68 @@
+Selenium Class 4
+CSS selector --Cascading Style Sheets
+-- it is another way of locating elements on the web page
+
+Syntax
+tagName [ attribute = 'attribute value ']
+button[type='submit']
+
+Css does not give an opportunity to locate element by txt
+
+shortcuts for CSS:
+shortcut for  ClassName --> "."
+
+syntax: tagName.classNameValue
+          input.button
+
+shortCut for ID --> "#"
+syntax : tagname#IDValue
+        input#twotabsearchtextbox
+
+contains () method in css:
+* symbol represents contains method in css
+
+tagname [attribute *= 'attribute value']
+example using contain and Css
+input[placeholder*='Email']
+
+starts- with method in css:
+^ (circumflex) symbol represents starts with method
+tagname [attribute ^= 'attribute value']
+
+ends-with method in css:
+$ symbol replresents ends with method in css
+tagname [attribute $= 'attribute value']
+
+xpath vs CSS
+-- CSS cannot locate elemtnes by text
+-- xpath can locate elements by text
+-- xpath doesnt have ends with method
+-- css has ends with method
+-- css is faster than xpath
+-- css has shortcuts that xpath doesnt have
+-- css has more simple syntax than xpath
+
+
+WebElement Commands:
+consissts of several methods where we can perform
+an action and get the element state on the webpage
+
+ isEnabled( ) : boolean - This determines if the element currently is Enabled or not? This accepts nothing as a parameter but returns boolean value(true/false).
+• Command - element.isEnabled();
+
+ isDisplayed( ) : boolean - This method determines if an element is currently being displayed or not. This accepts nothing as a parameter but returns boolean value(true/false).
+• Command - element.isDisplayed();
+
+isSelected( ) : boolean - Determine whether or not this element is selected or not. This accepts nothing as a parameter but returns boolean value(true/false).
+• Command - element.isSelected();
+• This operation only applies to input elements such as Checkboxes, Select Options and Radio Buttons. Th
+
+
+
+isEnabled () -- bolean vlaue
+isDisplayed()-- boolean value
+isSelected()-- boolean value
+clear () -- void
+getText() -- string value
+getAttribute() --- string value
+submit ( ) ---  void

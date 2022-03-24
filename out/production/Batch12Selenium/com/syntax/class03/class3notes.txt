@@ -39,7 +39,6 @@ starts with will identifly the elements with partial starting valye
 
 
 tags what they mean
-
 <div > - division
 <img > -- image
 <h> --- header
@@ -52,18 +51,33 @@ tags what they mean
 
 start with id the with name then with xpath
 
-advanced xpath- parent and child relationships
+advanced xpath
+-is based on parent and child, sibling relationship inside the HTML
+- we used advanced x path when we cant identify element by one attribute we use advanced xpath
 
-identifying elemnts by following siblings
+ there are 3 ways to use advanced xpath
+1) identifying elements by following siblings
 //tagname[@attribute=‘attribute value’]/following-sibling::tagname
+example:
+//input[@id='calFromDate']/following-sibling::img
 
 
-indentify elemnts by preceing siblinggs
-//tagname[@attribute=‘attribute value’]
-//input[@id= 'calFromDate']/following-sibling::img
+2 )identify elements by preceding siblings
+//tagname[@attribute=‘attribute value’]/preceding-sibling::tagname
+examples:
+//span[text()='& Orders']/preceding-sibling::span
+//input[@id='calFromDate']/preceding-sibling::label
 
-indentifying an element by its ancestor
-//tagname[@attribute=‘attribute value’]/ancestor::
+3) identifying an element by parent
+//tagname[@attribute=‘attribute value’]/parent::parenttagName
+example
+//span[text()='& Orders']/parent::a
+
+
+4) identifying an element by its ancestor
+//tagname[@attribute=‘attribute value’]/ancestor::ancestortagname
+example:
+//input[@id='email']/ancestor::form
 
 
 
