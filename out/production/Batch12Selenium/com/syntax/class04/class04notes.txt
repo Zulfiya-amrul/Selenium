@@ -6,7 +6,7 @@ Syntax
 tagName [ attribute = 'attribute value ']
 button[type='submit']
 
-Css does not give an opportunity to locate element by txt
+Css does not give an opportunity to locate element by text
 
 shortcuts for CSS:
 shortcut for  ClassName --> "."
@@ -30,36 +30,43 @@ starts- with method in css:
 tagname [attribute ^= 'attribute value']
 
 ends-with method in css:
-$ symbol replresents ends with method in css
-tagname [attribute $= 'attribute value']
+$ symbol represents ends with method in css
+tag-name [attribute $= 'ending attribute value']
+example -
+img [src$='syntax.png']
 
 xpath vs CSS
--- CSS cannot locate elemtnes by text
+-- CSS cannot locate elements by text
 -- xpath can locate elements by text
--- xpath doesnt have ends with method
+-- xpath doesn't have ends with method
 -- css has ends with method
--- css is faster than xpath
--- css has shortcuts that xpath doesnt have
+-- css is faster than xpath in finding the elements
+-- css has shortcuts that xpath doesn't have
 -- css has more simple syntax than xpath
+-- no advanced in CSS
 
 
 WebElement Commands:
-consissts of several methods where we can perform
+consists of several methods where we can perform
 an action and get the element state on the webpage
 
- isEnabled( ) : boolean - This determines if the element currently is Enabled or not? This accepts nothing as a parameter but returns boolean value(true/false).
+ isEnabled( ) : boolean - This determines if the element currently is Enabled or not?
+ This accepts nothing as a parameter but returns boolean value(true/false).
 • Command - element.isEnabled();
 
- isDisplayed( ) : boolean - This method determines if an element is currently being displayed or not. This accepts nothing as a parameter but returns boolean value(true/false).
+ isDisplayed( ) : boolean - This method determines if an element is currently being displayed or not.
+  This accepts nothing as a parameter but returns boolean value(true/false).
 • Command - element.isDisplayed();
 
-isSelected( ) : boolean - Determine whether or not this element is selected or not. This accepts nothing as a parameter but returns boolean value(true/false).
+isSelected( ) : boolean - Determine whether this element is selected or not.
+ This accepts nothing as a parameter but returns boolean value(true/false).
 • Command - element.isSelected();
-• This operation only applies to input elements such as Checkboxes, Select Options and Radio Buttons. Th
+• This operation only applies to input elements such as Checkboxes,
+ Select Options and Radio Buttons.
 
 
 
-isEnabled () -- bolean vlaue
+isEnabled () -- boolean value
 isDisplayed()-- boolean value
 isSelected()-- boolean value
 clear () -- void
