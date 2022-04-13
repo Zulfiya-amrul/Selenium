@@ -21,7 +21,7 @@ Then verify Syntax Logo is displayed.
         driver.findElement(By.id("txtPassword")).sendKeys("Hum@nhrm123");
         driver.findElement(By.id("btnLogin")).click();
         System.out.println(driver.findElement(By.cssSelector("img[src*='human']")).isDisplayed());
-        driver.quit();
+        //driver.quit();
 
     }
 

@@ -12,6 +12,7 @@ public class MaximizeWindow {
         driver.navigate().to("https://www.amazon.com/");
        // driver.manage().window().maximize(); // will use this method in real life most
         driver.manage().window().fullscreen();// no control panel, dont see the tabs,
+        driver.manage().window().maximize();
 
 
     }

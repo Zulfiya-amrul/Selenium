@@ -1,22 +1,24 @@
 Selenium Class 6
 Alerts :
-Alert is a pop up message. Alerts takes a complete focus of main page that we are working on
-we cannon procced until it is handled
+Alert is a pop-up message. Alert takes the complete focus of main page that we are working on
+we cannon proceed until it is handled
 3 types of alerts
-1. web base alert/html alerts - we can simply inspect and perform needed actions
-2. java-script alert/ browser alerts - completely takes the action of the mail page,\
+1. web base alert/html alerts - we can simply inspect and perform needed actions (EXAMPLE FACEBOOK SIGN UP-POP UP)
+2. java-script alert/browser alerts - completely takes the action of the mail page,MAINLY WE WILL WORK WITH THIS ALERT
                         we can handle these alerts by using switchTo methods
-                        we cannot inspect
-3. windows base alert - we cannont handle with selenium
+                        we cannot inspect any of the java-script alerts
+3. windows base alert - we cannot handle with selenium
+    EXAMPLE - WHEN UPLOADING FILES WE GET A POP-UP FILE FROM OUR COMPUTER, WE CANT INTERACT WITH THESE TYPE OF ALERTS IN SELENIUM
 
-Types of Java script alerts
+
+Types of JavaScript alerts
     1. simple alert
     2. confirmation alert - either cancel or click okay
     3. prompt alert--- we need to enter a text, or cancel without sending
 
 to handle JS alerts we only have 4 methods
 1. accept( ) click ok
-2.dismiss() click cancel
+2.dismiss() click cancel - will locate cancel button but if cancel button not there it will click on okay button
 3.getText()
 4.sendKeys()
 
@@ -25,14 +27,14 @@ to handle authentication alerts we need to pass username and password in the url
                                         //  username:password@
 
    Frames
-Frame is a separate independent window in our webpage
+Frame is a separate independent window in our webpage separate from the window that we are working on
 Frames allow developers to represent multiple views on one page
 3 methods to interact with frames:
 1. by index
 2. by name or id
 3. by webElement
 
-in alerts - switch to alert and swtich automatically back
+in alerts - switch to alert and switch automatically back
 in frames - switch to a frame manually and switch manually back to the main page
 
 interview question

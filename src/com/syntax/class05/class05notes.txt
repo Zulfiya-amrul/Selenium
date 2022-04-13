@@ -1,12 +1,38 @@
 Selenium CLass 5
+what are the difference between xpath and css
+css Selector
+-has shortcuts for locators
+- no slashes
+- has EndsWith method
+- cannot locate element using text
+
+
+x path
+- starts with double slash
+- no endsWith method in xPath
+- can locate element using text
+
+Web element commands
+- isEnabled()
+- isDisplayed  ()
+- isSelected ()
+-clear ()
+- getText()
+- getAttribute()
+- Submit ()
+
+
+
+
 Handling checkboxes and radiobutton:
 -- radio buttons you can only select one
+-- you cannot uncheck
 -- check boxes
 -- if you have only 1 checkbox or radio button-- you can just click on it
--- if you have multiple choices - store them in List and loop through
+-- if you have multiple choices - store them in List and loop through them
 
 DropDowns
-DropDown is a menu which gives us an opportunity to select one or more optoins
+DropDown is a menu which gives us an opportunity to select one or more options
 
 Types of Dropdowns
 1.Single select
@@ -15,14 +41,14 @@ Types of Dropdowns
 Handling Dropdowns:
 1. click on dropdown and click on the option
 2. using Select class (select class selenium)
-            in order to use Select class we need to make sure our dropdown has select tag
+            in order to use Select class we need to make sure our dropdown has select tag in the DOM
 
  Selecting an option from a dropdown can be done in 3 ways:
  1. by index
  2. by visible text
  3. by value
 
-whenever you interact with multiple elements you store them inside the container such as List, Set...
+whenever you interact with multiple elements you store them inside the container such as List, Set, Maps...
 
 In order to deselect any option in dropdown:
 -- Make sure your DD is multiple select
@@ -32,7 +58,7 @@ deselectByIndex()
 deselectAll()
 
 TC 1: Facebook dropdown verification
-Open chrome browser
+Open Chrome browser
 Go to “https://www.facebook.com”
 click on create new account
 Verify:

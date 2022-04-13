@@ -1,0 +1,42 @@
+Alerts
+ alert is a pop up message,
+ alerts tatkes a complete focus of our main mage that we are working on
+ we cannot proceed until it is handled
+Web Based
+Browser Based
+JavaScript Alerts
+
+Selenium Class 7
+Handling Multiple Windows(Tabs): to handle mulitple windows using selenium we need 2 thing
+
+in order for us to handle mutiple windows, we will be using:
+getWindowHandle ()
+getWindowHandles()
+window-handle- is a unique ID that holds the address of the window/tab,
+it is approximately a 40 alphanumeric character ID
+
+
+Synchronization:
+is the process of bringing the speed of two or more components the same level
+in this case we are brnging oout script and page loead to the same speed level
+
+thread.sleep() -- static wait / uncoditional wait
+
+types of selenium waits
+implicit wait
+explicit wait
+fluent wait
+
+implicit wait --- works with findElement(  ) method
+tells webDriver to wait certain about of time before throwing an exception, will be applied to the whole session of execution
+- it tells the web-driver to wait for a certain amount of time before throwing an exception,
+it will only be written once and will be applied to the whole session of excecution
+we can say that implicit wait is global wait
+implicit wait is usually set for  20 seconds,
+if your element is found in any time between the given time the remaining time will be ignored and your script will move to next line or action
+if the element is not found in the given time, only then you will get an exception
+
+
+
+
+

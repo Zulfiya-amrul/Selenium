@@ -13,8 +13,12 @@ public class HandleAlerts {
         WebDriver driver = new ChromeDriver();
         driver.get(url);
         WebElement simpleAlertButton = driver.findElement(By.id("alert"));
+        // Identified the alert button
         simpleAlertButton.click();
+        // clicked on the alert button, and the focus of selenium is lost
         Alert simpleAlert = driver.switchTo().alert();
+        // telling selenium to switch the focus on the alert sinse it lost the focus once the pop-up showed up
+
         Thread.sleep(2000);
         simpleAlert.accept();// handling simple alerts
 

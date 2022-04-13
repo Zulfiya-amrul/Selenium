@@ -19,7 +19,9 @@ public class HandlingMultipleSelectDD {
         WebDriver driver = new ChromeDriver();
         driver.get(url);
         WebElement statesDD = driver.findElement(By.name("States"));//using element it is a single dropdown to identify
-        Select select = new Select(statesDD);
+
+        Select select = new Select(statesDD); // creating object of select class
+
         boolean isMultiple = select.isMultiple();
         System.out.println(isMultiple);
         if (isMultiple) {
@@ -27,9 +29,10 @@ public class HandlingMultipleSelectDD {
             for (WebElement option : options) {
                 String optionText = option.getText();
                 select.selectByVisibleText(optionText);
-                Thread.sleep(2000);
+                Thread.sleep(1000);
             }
-
         }
+          select.deselectByIndex(5);
+          // select.deselectAll();
     }
 }
