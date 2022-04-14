@@ -1,0 +1,33 @@
+Selenium Class 10
+
+how to handle calendars
+1) click on the calendar
+2) locate the month and get the text
+3) if the desired text is not visible ---> we will keep clicking on next keep updating the text of the meonth
+4) as soon as we found our dersired meonth --> grap all the cells from the table
+5) loop through the cells
+6) once the cell value is matched with our condition ---> click on the matched date
+
+
+Why do we need screenshots in testing?
+in testing it is very important to take screenshots in order to prove taht our test case
+covered certain functionality
+
+in selenium in order to take a screenshot we will be using
+TakeScreenShot interface
+
+
+Action class:
+is given by selenium to capture keyboard and mouse events such as:
+move to element
+drag and drop
+double click
+right click
+
+
+
+
+
+
+
+

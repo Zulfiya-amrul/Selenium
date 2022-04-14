@@ -1,4 +1,4 @@
-package com.syntax.class02;
+package com.syntax.class10;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
@@ -7,9 +7,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.io.File;
 import java.io.IOException;
 
-public class WebOrders {
-    public static void main(String[] args) {
-
+public class TakingScreenShot {
+    public static void main(String[] args) throws IOException {
         System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
         WebDriver driver = new ChromeDriver();
         driver.get("http://secure.smartbearsoftware.com/samples/testcomplete11/WebOrders/login.aspx");
@@ -24,18 +23,17 @@ public class WebOrders {
         WebElement loginButton = driver.findElement(By.id("ctl00_MainContent_login_button"));
         loginButton.click();
 
-        TakesScreenshot ts= (TakesScreenshot)driver;
-        File srcFile=  ts.getScreenshotAs(OutputType.FILE);// the screenshot is taken on this step
+        TakesScreenshot ts= (TakesScreenshot) driver; // take screenshot interface and
+        /// and cast it inside
+        File srcFile= ts.getScreenshotAs(OutputType.FILE); //  // the screenshot is taken on this step
 
 
         try {
-            FileUtils.copyFile(srcFile, new File ("screenshots/SmartBear/adminLogin111.png"));
+            FileUtils.copyFile(srcFile, new File("screenshots/SmartBear/adminLogin111.png"));
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        } // for macs we do command option T
 
 
     }
-
-
 }
